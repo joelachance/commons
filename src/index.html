@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Commons</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div id="panel">
+    <header id="head">
+      <span id="mark">commons</span>
+      <span id="status"></span>
+    </header>
+
+    <main id="stream" aria-live="polite">
+      <p id="empty">Nothing yet. Write a thought below.</p>
+    </main>
+
+    <footer id="composer">
+      <div id="notice" hidden></div>
+      <div id="inputrow">
+        <textarea id="input" rows="1" placeholder="Write a thought…" spellcheck="false"></textarea>
+        <button id="mic" title="Dictate (⌘D)" aria-label="Dictate">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+            <path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/>
+            <path d="M5 11v1a7 7 0 0 0 14 0v-1M12 19v3" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span id="meter"></span>
+        </button>
+      </div>
+      <div id="hint"><kbd>↩</kbd> save &nbsp;·&nbsp; <kbd>⇧↩</kbd> newline &nbsp;·&nbsp; <kbd>⌘D</kbd> voice &nbsp;·&nbsp; <kbd>esc</kbd> hide</div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
